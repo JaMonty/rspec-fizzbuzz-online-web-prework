@@ -1,4 +1,5 @@
 ## Objectives
+
 1. Build methods that utilize flow control
 2. Read and understand test output to develop a working program
 3. Gain more familiarity with the concept of test driven development
@@ -368,6 +369,8 @@ rspec-fizzbuzz/
 The `spec` directory is for our tests. There's a more advanced folder structure to separate the different kinds of tests you might encounter: unit, acceptance, etc. For now, while our scripts are simple, we'll typically have one `_spec.rb` test for each lab.
 
 We're not going to put the heart of our application in the `spec` folder — that wouldn't make sense. We want to keep our code organized so developers can easily guess the context or part of the system a file corresponds to. It's a measure of symmetry to our code for tests to go in the `spec` directory.
+
+In a larger program, I would put my code in a `lib` directory. In this example, `fizzbuzz.rb` is in the root directory, right alongside this `README.md`.
 longside this `README.md`.
 
 `fizzbuzz.rb` is where we're going to code the core of our program: a simple method, `#fizzbuzz`, that, when invoked by the tests above, will behave as we specified. For now though, let's just fix the first `rspec` failure.
